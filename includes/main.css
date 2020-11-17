@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'arial', sans-serif;
+	font-size: 0.8rem;
+	color: #0e2045;
+}
+
+a {
+	text-decoration: none;
+	color: #3d73dd;
+}
+
+a:hover {
+	opacity: 75%;
+}
+
+/*Navbar*/
+
+.navbar {
+	background: #3d73dd;
+	color: #f1f1f1;
+}
+
+.navbar nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+}
+
+.navbar h1 a {
+	color: white;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+} 
+
+.navbar li {
+	margin-left: 5px;
+}
+
+.navbar input {
+	border: 0;
+}
+
+.navbar form {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.navbar form img {
+	width: 20px;
+	margin-left: 5px;
+}
+
+/*Container*/
+
+.container {
+	display: flex;
+	margin: 15px;
+}
+
+/*Menu*/
+
+.menu {
+	background-color: #3d73dd;
+	width: 180px;
+	border-radius: 10px 0 0 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.menu-head {
+	margin: 10px 0;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #f1f1f1;
+}
+
+.menu-head img {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	background-color: #f1f1f1;
+}
+
+
+.menu a {
+	color: #f1f1f1;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu li{
+	margin: 15px 0px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid white;
+}
+
+/*Content*/
+
+.content {
+	background-color: #f1f1f1;
+	border-radius: 0 10px 10px 0;
+	flex-grow: 1;
+	margin-left: 10px;
+	padding: 15px;
+}
+
+.content h1,h2,h3 {
+	margin-bottom: 5px;
+}
+
+.daftar-pertanyaan a {
+	display: block;
+}
+
+/*Input*/
+
+input, select {
+	padding: 3px 10px;
+	border-style: none;
+	border-radius: 5px;
+	border: 1px solid #a6afbd;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+	width: 240px;
+	background-color: white;
+}
+
+input[type=submit] {
+	border-style: none;
+}
+
+textarea {
+	width: 400px;
+	height: 120px;
+	resize: none;
+	padding: 5px;
+	border-radius: 5px;
+	border-style: none;
+	border: 1px solid #a6afbd;
+}
+
+/*Form*/
+
+.form-tabel {
+	margin: 5px 0;
+	border-radius: 5px;
+}
+
+.form-tabel h2 {
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin: 5px 0;
+}
+
+/*Profil*/
+
+.profil label {
+	margin: 15px 0;
+}
+
+.profil img {
+	height: 180px;
+	border-radius: 5px;
+}
+
+.profil .isi {
+	font-size: 1.1rem;
+	text-decoration: underline;
+}
+
+/*Pertanyaan*/
+
+.pertanyaan h4 {
+	margin-bottom: 5px;
+}
+
+.pertanyaan h2{
+	font-size: 1rem;
+}
+
+.kolom-pertanyaan {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 1px 2px 6px gray;
+
+}
+
+.info-pengguna {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #3d73dd;
+}
+
+
+.info-pengguna img {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+}
+
+.info-keterangan {
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.9rem;
+}
+
+.suka {
+	border-bottom: 1px solid grey;
+	padding-bottom: 15px;
+}
+
+/*Button*/
+
+.button {
+	padding: 3px 10px;
+	background: #f1f1f1;
+	color: #0e2045;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-simpan {
+	margin-top: 10px;
+	display: block;
+	cursor: pointer;
+	background-color: #3d73dd;
+	color: #f1f1f1;
+}
+
+@media (max-width: 700px) {
+
+.navbar h1 a {
+	font-size: 1rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+	width: 200px;
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+.navbar h1 a {
+	font-size: 0.9rem;
+}
+
+.content {
+	flex-grow: 0;
+}
+
+textarea {
+	width: 300px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+	width: 160px;
+}
+
+}
